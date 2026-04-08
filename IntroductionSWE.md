@@ -1,4 +1,4 @@
-**Môn học swe (Introduction Software engineer)**
+**Môn học SWE (Introduction Software engineer)**
 
 * **MOOC 01 (GenAI):** Học cách dùng AI để sinh code, viết test, và debug. Bạn có thể áp dụng ngay phần này để tối ưu tốc độ code Java của mình.
 * **MOOC 02 (UML):** Trọng tâm ở đây là vẽ biểu đồ. Mình sẽ giúp bạn phân biệt rõ khi nào dùng Use Case, Class Diagram, hay Sequence Diagram.
