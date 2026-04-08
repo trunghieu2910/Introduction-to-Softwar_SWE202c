@@ -1,4 +1,4 @@
-IV. AI software Design   
+IV. AI software Design new    
 Đây là một bước thăng cấp thực sự\! Nếu ở các chương trước, chúng ta dùng AI như một người thợ để sửa lỗi, dọn dẹp và viết tài liệu, thì ở chương này, AI sẽ đóng vai trò là một **"Kiến trúc sư trưởng" (Software Architect)**.
 
 1. Thiết kế & Xây dựng (Software design & Building apps)  
