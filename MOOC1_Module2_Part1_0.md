@@ -79,8 +79,28 @@ Việc sử dụng  radoom forest có lợi ích
 ![][image2]  
 ![][image3]
 
-- Neural network in action :   
-+ 
+Neural network in action :  cách Mạng nơ-ron dùng toán học để đưa ra quyết định, thông qua ví dụ tiệm trái cây của Toni. Chúng ta sẽ chia bài học làm 4 phần chính:
+1. Câu chuyện ẩn dụ: Tiệm trái cây của Toni
+Để phân loại xem một quả có phải là "Quả Táo" hay không, Toni không tự làm tất cả mà chia việc cho 3 đứa trẻ. Đây chính là hình ảnh thu nhỏ của Mạng nơ-ron:
+Trái cây (Input Layer): Đầu vào mang theo 3 đặc điểm thô: Màu sắc, Kích thước, Hình dáng.
+3 đứa trẻ (Hidden Layer - Lớp ẩn): Mỗi đứa trẻ là một "Nơ-ron". Đứa số 1 chỉ soi màu đỏ, đứa số 2 soi kích thước, đứa số 3 soi hình dáng.
+Toni (Output Layer - Lớp đầu ra): Người thu thập báo cáo từ 3 đứa trẻ để chốt lại: "Đây là quả táo!".
+2. Trọng số (Weights) - Khái niệm quan trọng nhất
+Không phải đặc điểm nào cũng quan trọng như nhau. Trọng số (Weight) chính là "độ ưu tiên".
+Toni biết rằng "Màu đỏ" rất quan trọng để nhận diện quả táo, nên gán trọng số cao (0.7).
+Kích thước nhỏ quan trọng vừa (0.5).
+Hình dáng quan trọng ít hơn (0.3).
+(Liên hệ thực tế: Tương tự như khi bạn xây dựng tính năng phân loại quần áo, đặc điểm "Có cúc cài dọc" sẽ có trọng số rất cao để nhận diện một chiếc áo sơ mi, trong khi "Màu sắc" lại có trọng số rất thấp vì sơ mi màu gì cũng có).
+3. Quy trình 5 bước để AI "chốt đơn"
+Mạng nơ-ron không đoán bừa, nó tính toán bằng những con số cụ thể theo 5 bước:
+Bước 1: Chấm điểm (Scoring): Các nơ-ron chấm điểm đặc điểm từ 0 đến 1. Ví dụ: Quả này rất đỏ (Điểm 1), rất nhỏ (Điểm 1), hơi giống quả táo (Điểm 0.8).
+Bước 2: Gắn Trọng số (Weighting): Lấy điểm ở Bước 1 ghép với Trọng số ở phần 2.
+Bước 3: Tính tổng (Summing): Nhân Điểm với Trọng số rồi cộng hết lại. (1 * 0.7) + (1 * 0.5) + (0.8 * 0.3) = 1.44. Con số 1.44 này gọi là "Điểm tự tin" thô.
+Bước 4: Hàm kích hoạt (Activation Function): Con số 1.44 hơi khó hiểu đối với con người. Mạng nơ-ron dùng một công thức toán học tên là Sigmoid để "ép" số 1.44 này về một khoảng từ 0 đến 1. Kết quả tính ra là 0.81 (tức là 81%).
+Bước 5: Quyết định cuối cùng (Final Decision): Lớp đầu ra (Output) so sánh: Xác suất là Quả táo (81%) lớn hơn Xác suất không phải Quả táo (19%). Hệ thống chốt kết quả: Đây là Quả táo!
+4. Học từ sai lầm (Error Correction)
+Nếu hệ thống gặp một quả gì đó màu đỏ, nhỏ gọn, nhưng không phải quả táo (ví dụ: quả mận) mà nó vẫn kết luận là "Quả táo", thì nó đã sai. Lúc này, Mạng nơ-ron sẽ có một cơ chế Phản hồi (Feedback loop). Nó tự nhủ: "À, mình đã đánh giá quá cao màu sắc. Lần sau mình phải giảm Trọng số của Màu sắc xuống, và tăng Trọng số của Hình dáng lên". Nhờ việc liên tục tự chỉnh sửa các con số Trọng lượng này qua hàng ngàn lần sai, AI ngày càng trở nên "thông minh" và đoán chuẩn xác hơn.
+
 
 4. CÁC THUẬT NGỮ   
    
