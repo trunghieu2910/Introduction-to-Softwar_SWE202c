@@ -1,0 +1,6 @@
+Dưới đây là 3 thông điệp cốt lõi nhất mà các bài học này thường truyền tải để làm nền tảng cho việc vẽ sơ đồ UML ở các phần sau:
+
+* **Phần mềm vốn dĩ cực kỳ phức tạp (Lecture 1-1):** Viết một đoạn mã vài chục dòng để giải toán thì đơn giản, nhưng xây dựng cả một hệ thống website thương mại điện tử bằng Java, kết nối cơ sở dữ liệu SQL, quản lý giỏ hàng, thanh toán và chịu tải hàng ngàn người dùng truy cập cùng lúc thì lại là một câu chuyện hoàn toàn khác. Các thành phần đan xen vào nhau rất dễ trở thành một "mớ bòng bong" không thể kiểm soát.  
+* **Cách "trị" sự phức tạp (Lecture 1-2):** Chúng ta không thể ôm đồm code tất cả mọi thứ cùng lúc từ đầu đến cuối. Bí quyết cốt lõi ở đây là **"Chia để trị" (Divide and Conquer)** và **"Trừu tượng hóa" (Abstraction)**. Thay vì nhìn vào hàng vạn dòng code, chúng ta sẽ chia hệ thống ra thành các khối nhỏ gọn gàng hơn. Đó chính là lý do công cụ UML sắp xuất hiện để giúp bạn "vẽ" ra các khối đó.  
+* **Bản chất của Kỹ thuật Phần mềm (Lecture 1-3):** Bài học này thường nhấn mạnh sự khác biệt giữa một *Coder* (người thợ gõ phím) và một *Software Engineer* (kỹ sư phần mềm). Kỹ sư là người không vội vã lao vào code ngay. Họ cần phân tích yêu cầu, thiết kế bản vẽ kiến trúc (UML), và tính toán đến những thứ dài hạn như khả năng mở rộng (Scalability) hay quy trình triển khai tự động (DevOps).
+
